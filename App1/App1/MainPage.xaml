@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.MainPage">
+
+    <StackLayout>
+        <Label Text="Hello World!!"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand" />
+        <Label
+            x:Name="lblValue"
+            Text="0"
+            TextColor="Black"
+            FontSize="72"
+            FontFamily="Arial"
+            HorizontalOptions="Center"
+            />
+        <Entry
+            Placeholder="Enter your name"
+            FontSize="48"
+            FontAttributes="Bold"
+            TextChanged="Entry_TextChanged"
+            />
+        <Label
+            x:Name="display"
+            FontFamily="Arial"
+            FontSize="48"
+            HorizontalOptions="Center"
+            />
+        <Button
+            x:Name="btnIncrease"
+            FontFamily="Arial"
+            FontSize="48"
+            HorizontalOptions="Center"
+            Clicked="btnIncrease_Clicked"
+            Text="+"
+            />
+        <Button
+            x:Name="btnDecrease"
+            FontFamily="Arial"
+            FontSize="48"
+            HorizontalOptions="Center"
+            Clicked="btnDecrease_Clicked"
+            Text="-"
+            />
+    </StackLayout>
+
+</ContentPage>
